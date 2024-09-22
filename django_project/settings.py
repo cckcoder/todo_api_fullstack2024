@@ -30,12 +30,15 @@ INSTALLED_APPS = [
     # REST
     'rest_framework',
     'rest_framework_simplejwt',
+    # CORS
+    'corsheaders',
     # APP
     'todos',
     'accounts',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -122,6 +125,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = (
     "http://localhost:3000",
+    "http://localhost:5173",
     "http://localhost:8000",
     "https://my-front-end.com",
 )
@@ -134,7 +138,7 @@ CSRF_TRUSTED_ORGINS = [
 
 REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": [
-        "rest_framework.permissions.IsAuthenticated"
+        "rest_framework.permissions.AllowAny"
     ],
     "DEFAULT_AUTHENTICATION_CLASSES": (
         "rest_framework.authentication.SessionAuthentication",
