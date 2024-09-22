@@ -13,7 +13,7 @@ U = Update
 D = Delete
 """
 class ListTodo(generics.ListCreateAPIView):
-    permission_classes = [IsAuthenticatedOrReadOnly]
+    # permission_classes = [IsAuthenticatedOrReadOnly]
     queryset = Todo.objects.all().order_by('-id')
     serializer_class = TodoSerializer
 
