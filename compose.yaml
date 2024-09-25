@@ -7,6 +7,12 @@ services:
     volumes:
        - todo-api:/app
     command: gunicorn 'django_project.wsgi' --bind=0.0.0.0:8000
+  my-app:
+    image: cckcoder/my-vue-app:v1
+    ports:
+      - "5173:80"
+    depends_on:
+      - todo-api
 volumes:
   todo-api:
 
