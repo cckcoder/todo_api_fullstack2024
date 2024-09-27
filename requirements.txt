@@ -7,6 +7,7 @@ dj-rest-auth==2.1.11
 Django==4.0.10
 django-cors-headers==4.1.0
 djangorestframework==3.14.0
+djangorestframework-simplejwt==5.3.1
 drf-yasg==1.21.7
 fancycompleter==0.9.1
 gunicorn==21.2.0
@@ -19,6 +20,7 @@ pdbpp==0.10.3
 platformdirs==3.1.1
 pycryptodomex==3.18.0
 Pygments==2.14.0
+PyJWT==2.9.0
 pyrepl==0.9.0
 pytz==2022.7.1
 PyYAML==6.0.1
