@@ -130,7 +130,7 @@ CORS_ALLOWED_ORIGINS = (
     "http://localhost:5173",
     "http://localhost:8000",
     "https://my-front-end.com",
-    "http://128.199.124.86:5173"
+    "http://128.199.124.86"
 )
 
 # my-api.devhub.in.th/admin
