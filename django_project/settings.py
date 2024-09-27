@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-ad*rn*0x6^fj$m31)(!hyuayrhp8uv^bn8(6hhs88@@%x=25b$
 # DEBUG = True
 DEBUG = False
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "128.199.124.86"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "152.42.240.215"]
 
 
 # Application definition
@@ -130,7 +130,7 @@ CORS_ALLOWED_ORIGINS = (
     "http://localhost:5173",
     "http://localhost:8000",
     "https://my-front-end.com",
-    "http://128.199.124.86"
+    "http://152.42.240.215"
 )
 
 # my-api.devhub.in.th/admin
@@ -138,7 +138,7 @@ CSRF_TRUSTED_ORGINS = [
     "http://localhost:3000",
     "http://localhost:5173",
     "my-api.devhub.in.th",
-    "http://128.199.124.86:5173"
+    "http://152.42.240.215:5173"
 ]
 
 REST_FRAMEWORK = {
