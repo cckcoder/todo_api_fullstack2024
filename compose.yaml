@@ -8,7 +8,7 @@ services:
     volumes:
       - todo-vol:/app/data
   my-app:
-    image: cckcoder/my-vue-app:v3
+    image: cckcoder/my-vue-app:v4
     ports:
       - 5173:80
     depends_on:
