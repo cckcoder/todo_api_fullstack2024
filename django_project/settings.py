@@ -19,7 +19,7 @@ ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
     "152.42.240.215",
-    "djangotime.com"
+    "https://djangotime.com"
 ]
 
 
@@ -135,7 +135,7 @@ CORS_ALLOWED_ORIGINS = (
     "http://localhost:5173",
     "http://localhost:8000",
     "https://my-front-end.com",
-    "http://152.42.240.215:5173"
+    "http://152.42.240.215:5173",
     "https://djangotime.com",
     "https://api.djangotime.com"
 )
