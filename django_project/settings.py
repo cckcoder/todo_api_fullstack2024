@@ -142,11 +142,9 @@ CORS_ALLOWED_ORIGINS = (
     "https://api.djangotime.com"
 )
 
-# my-api.devhub.in.th/admin
-CSRF_TRUSTED_ORGINS = [
+CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",
     "http://localhost:5173",
-    "my-api.devhub.in.th",
     "http://152.42.240.215:5173",
     "https://djangotime.com",
     "https://api.djangotime.com"
