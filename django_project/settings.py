@@ -19,7 +19,9 @@ ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
     "152.42.240.215",
-    "https://djangotime.com"
+    "www.djangotime.com",
+    "djangotime.com",
+    "api.djangotime.com",
 ]
 
 
@@ -147,6 +149,7 @@ CSRF_TRUSTED_ORGINS = [
     "my-api.devhub.in.th",
     "http://152.42.240.215:5173",
     "https://djangotime.com",
+    "https://api.djangotime.com"
 ]
 
 REST_FRAMEWORK = {
